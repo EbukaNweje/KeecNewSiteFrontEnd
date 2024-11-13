@@ -13,7 +13,7 @@ const sendSignUpEmail = async () => {
   const data = {
     email: email.value,
   };
-  fetch('https://slimnewsitebackend.onrender.com/api/signupemailsand', {
+  fetch('https://keecnewsitebackend-1.onrender.com/api/signupemailsand', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ button.onclick = async (event) => {
   console.log(data);
   button.innerHTML = "Loading...";
 
-  fetch('https://slim-new-site-back-end.vercel.app/api/register', {
+  fetch('https://keec-new-site-back-end.vercel.app/api/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ button.onclick = async (event) => {
       console.log(response)
       const id = JSON.parse(localStorage.getItem('userId'))
       console.log("Local User Id", id);
-      window.location.href = `https://tradebitpay-dashboard.vercel.app/`;
+      window.location.href = `https://tradebitpaydashboard.vercel.app/`;
       
     })
     .catch((error) => {
