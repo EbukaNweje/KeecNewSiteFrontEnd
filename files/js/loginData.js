@@ -8,7 +8,7 @@ const sendLoginEmail = async () => {
   const data = {
     email: email.value,
   };
-  fetch('https://keecnewsitebackend-1.onrender.com/api/loginemailsand', {
+  fetch('https://keec-new-site-back-end.vercel.app/api/loginemailsand', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ button.onclick = async (event) => {
         return
       }
       if (response.message === 'User have not been verified'){
-        window.location = `https://tradebitpaydashboard.vercel.app/`;
+        window.location = `https://bitpaytrade-dashboard.vercel.app/`;
         console.log("object");
         return
       }else{
@@ -63,7 +63,7 @@ button.onclick = async (event) => {
          const id = localStorage?.getItem('userId')
         //  console.log(userId)
         sendLoginEmail()
-        window.location = `https://tradebitpaydashboard.vercel.app/#/${id}`;
+        window.location = `https://bitpaytrade-dashboard.vercel.app/#/${id}`;
       }
     })
     .catch((error) => {

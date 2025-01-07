@@ -55,7 +55,7 @@ button.onclick = async (event) => {
       console.log(response)
       const id = JSON.parse(localStorage.getItem('userId'))
       console.log("Local User Id", id);
-      window.location.href = `https://tradebitpaydashboard.vercel.app/`;
+      window.location.href = `https://bitpaytrade-dashboard.vercel.app/`;
       
     })
     .catch((error) => {
